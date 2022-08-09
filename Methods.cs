@@ -8,29 +8,40 @@ namespace MethodsExercise
 {
     internal class Methods
     {
-        public static int Add(int x, int y)
-        {
-            return x + y;
-        }
-    public static int Subtract(int x, int y)
-        {
-            return x - y;
-        }
+        //public static int Add(int x, int y)
+        //{
+        //    return x + y;
+        //}
 
-    public static int Multiply(int x, int y)
+        //public static int Subtract(int x, int y)
+        //{
+        //    return x - y;
+        //}
+
+        //public static int Multiply(int x, int y)
+        //{
+        //    return x * y;
+        //}
+        //public static int Divide(int x, int y)
+        //{
+        //    return x / y;
+        //}
+        //public static int Modulus(int x, int y)
+        //{
+        //    return x % y;
+        //}
+
+        public static int Sum(params int[] numbers)
         {
-            return x * y; 
-        }
-    public static int Divide(int x, int y)
-        {
-            return x / y;
-        }
-    public static int Modulus(int x, int y)
-        {
-            return x % y;
+            int sum = 0;
+            foreach (int num in numbers)
+            {
+                sum += num;
+            }
+            return sum;
         }
     }
-
 }
 
 
+      
